@@ -1,0 +1,331 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgba(245, 245, 220, 0.7);
+    background: url('stunning-leaves.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.55); 
+}
+
+.header {
+    height: 85vh;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.125rem solid;
+    position: relative;
+}
+
+.header img.logo {
+    height: 4rem;
+    margin: 1.5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3.75rem;
+}
+
+.header p {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.navBar {
+    height: 10vh;
+    overflow: hidden;
+    background-color: rgba(245, 245, 220, 0.5); 
+}
+
+.navBar a {
+    float: left;
+    display: block;
+    color: #004d00; 
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navBar .el {
+    border-right: 0.05rem solid;
+}
+
+.navBar a:hover {
+    background-color: #004d00; 
+    color: #F5F5DC; 
+}
+
+.info {
+    padding: 1.5rem;
+    border: 0.0625rem solid none;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    color: #004d00; 
+}
+
+.about {
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.5); 
+    margin: 5rem; 
+    margin-bottom: 4rem;
+    border-radius: 0.5rem;
+    color: #004d00; 
+}
+
+.about p{
+    padding-left: 0.7rem;
+    margin: 3rem;
+    border-left: 0.15rem solid #004d00;
+}
+
+/* new modification -- 1*/
+
+.facts {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    background-color: #004d00;
+    border: none;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+}
+
+.cards {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0.0625rem solid #DDD;
+    padding: 1.25rem;
+    min-width: 30%;
+    text-align: center;
+    margin: 1.5rem 0.5rem;
+    border-radius: 0.5rem;
+    color: #004d00;
+}
+
+.cards .card{
+    display: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 66%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 90%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container:hover .text {
+    opacity: 2;
+}
+
+.title {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #004d00;
+    font-weight: bolder;
+}
+
+/* modification -- 2*/
+
+.facts2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.card2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0.0625rem solid #DDD;
+    padding: 1rem;
+    width: 35%;
+    height: 29%;
+    text-align: center;
+    margin: 3rem;
+    border-radius: 0.5rem;
+    color: #004d00;
+}
+
+.container2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.container2 img {
+    width: 100%;
+    height: 20%;
+    border-radius: 0.5rem;
+}
+
+.text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 66%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 140%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container2:hover .text2 {
+    opacity: 2;
+}
+
+.title2 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #004d00;
+    font-weight: bolder;
+}
+/* ...*/
+
+.quote {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 10rem 5rem 5rem 5rem;
+}
+
+.quote blockquote {
+    font-size: 2em;
+    padding: 6rem 1rem 1rem 1rem;
+    padding-top: 2rem;
+    position: relative;
+    color: white;
+}
+
+.quote p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.quote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8%;
+    height: 2px;
+    background-color: #DDD;
+}
+
+#toTop {
+    display: none;
+    margin: 1rem;
+    padding: 1rem 1rem;
+    border: 0.0625rem solid #004d00c6;
+    border-radius: 0.4rem;
+    background-color: #004d00c6; 
+    cursor: pointer;
+    position: fixed;
+    bottom: 3rem;
+    right: 1.875rem;
+    z-index: 99;
+    color: #F5F5DC;
+}
+
+#toTop:hover {
+    background-color: #004d00; 
+    color: #F5F5DC; 
+}
+
+.icons {
+    padding: 1rem;
+}
+
+.icons a{
+    width: 5rem;
+    height: 5rem;
+    padding: 0.5rem;
+    color: white;
+}
+
+.footer {
+    height: 17em;
+    text-align: center;
+    color: #F5F5DC; 
+    padding: 1rem;
+    border-top: 0.125rem solid;
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to{opacity: 1}
+}
+
+/* modification --> 3*/
+.secondI img{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0.0625rem solid #DDD;
+    padding: 1.55rem;
+    width: 27%;
+    text-align: center;
+    margin: 1.5rem 1.2rem;
+    border-radius: 0.5rem;
+    color: #004d00;
+    margin-bottom: 6rem;
+}
