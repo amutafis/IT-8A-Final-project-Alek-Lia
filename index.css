@@ -87,7 +87,8 @@ body {
     border-left: 0.15rem solid #004d00;
 }
 
-/* new modification*/
+/* new modification -- 1*/
+
 .facts {
     position: relative;
     display: flex;
@@ -114,15 +115,18 @@ body {
 }
 
 .card {
-    display: none;
     background-color: rgba(255, 255, 255, 0.5);
     border: 0.0625rem solid #DDD;
     padding: 1.25rem;
-    min-width: 35%;
+    min-width: 30%;
     text-align: center;
-    margin: 0.925rem;
+    margin: 1.5rem 0.5rem;
     border-radius: 0.5rem;
     color: #004d00;
+}
+
+.cards .card{
+    display: none;
 }
 
 .container {
@@ -167,7 +171,76 @@ body {
     font-weight: bolder;
 }
 
-/* ... */
+/* modification -- 2*/
+
+.facts2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.card2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0.0625rem solid #DDD;
+    padding: 1rem;
+    width: 35%;
+    height: 29%;
+    text-align: center;
+    margin: 3rem;
+    border-radius: 0.5rem;
+    color: #004d00;
+}
+
+.container2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.container2 img {
+    width: 100%;
+    height: 20%;
+    border-radius: 0.5rem;
+}
+
+.text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 66%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 140%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container2:hover .text2 {
+    opacity: 2;
+}
+
+.title2 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #004d00;
+    font-weight: bolder;
+}
+/* ...*/
 
 .quote {
     position: relative;
